@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clients Section</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff;
+      color: #111;
+      margin: 0;
+      padding: 0;
+    }
+
+    .section-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 80px 20px;
+    }
+
+    .section-container p.subtitle {
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: 1.5px;
+      color: #666;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .section-container h2.title {
+      font-size: 48px;
+      font-weight: 700;
+      margin: 10px 0 20px;
+      line-height: 1.2;
+    }
+
+    .section-container h2.title span.accent {
+      color: #f25f4c;
+    }
+
+    .section-container p.description {
+      font-size: 18px;
+      color: #555;
+      max-width: 550px;
+      line-height: 1.6;
+      margin-bottom: 50px;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+    }
+
+    .card {
+      flex: 1 1 calc(33.333% - 20px);
+      background-color: #f9f9f9;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card .card-content {
+      padding: 20px;
+    }
+
+    .card .card-content h3 {
+      margin: 0;
+      font-size: 20px;
+      color: #333;
+    }
+     .testimonial-grid {
+      display:flex;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .testimonial-card {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      height: 160px;
+    }
+
+    .testimonial-card img {
+      max-height: 25px;
+      object-fit: contain;
+      margin-bottom: 15px;
+    }
+
+    .testimonial-text {
+      font-size: 0.9rem;
+      color: #555;
+      flex-grow: 1;
+    }
+
+    .testimonial-meta {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #999;
+      text-align: right;
+      width: 100%;
+    }
+
+    @media (max-width: 992px) {
+      .card {
+        flex: 1 1 calc(50% - 20px);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        flex: 1 1 100%;
+      }
+
+      .section-container h2.title {
+        font-size: 36px;
+      }
+     
+    
+    }
+  </style>
+</head>
+<body>
+
+  <section class="section-container">
+    <p class="subtitle">OUR CLIENTS</p>
+    <h2 class="title">Over 10 Years of<br>Over Delivering<span class="accent">.</span></h2>
+    <p class="description">
+      We’ve partnered with top-tier brands and companies across the globe. Our commitment is simple:
+      we don’t just meet expectations—we exceed them.
+    </p>
+
+    <div class="card-container">
+      <div class="card">
+        <img src="https://source.unsplash.com/600x400/?woman,laptop" alt="Client 1" />
+        <div class="card-content">
+          <h3>Google</h3>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://source.unsplash.com/600x400/?luxury,car" alt="Client 2" />
+        <div class="card-content">
+          <h3>Rolls Royce</h3>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://source.unsplash.com/600x400/?developers,office" alt="Client 3" />
+        <div class="card-content">
+          <h3>Pinterest</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="testimonial-grid">
+    <div class="testimonial-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Abbott_Laboratories_logo.svg" alt="Abbott">
+      <div class="testimonial-text">"Excelente experiencia, confiabilidad total."</div>
+      <div class="testimonial-meta">Caso de éxito</div>
+    </div>
+
+    <div class="testimonial-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Abbvie_logo.svg" alt="Abbvie">
+      <div class="testimonial-text">"Gracias al equipo logramos automatizar todo nuestro flujo."</div>
+      <div class="testimonial-meta">Caso de éxito</div>
+    </div>
+
+    <div class="testimonial-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Autodesk_logo.svg" alt="Autodesk">
+      <div class="testimonial-text">"Lo que antes llevaba días, ahora lo resolvemos en minutos."</div>
+      <div class="testimonial-meta">Caso de éxito</div>
+    </div>
+
+    <div class="testimonial-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Google_2015_logo.svg" alt="Google">
+      <div class="testimonial-text">"Una solución flexible y escalable, ideal para nuestro crecimiento."</div>
+      <div class="testimonial-meta">Caso de éxito</div>
+    </div>
+
+    <div class="testimonial-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Ebay_logo.svg" alt="eBay">
+      <div class="testimonial-text">"Aceleramos nuestros tiempos de respuesta en un 40%."</div>
+      <div class="testimonial-meta">Caso de éxito</div>
+    </div>
+
+    <div class="testimonial-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/BBVA_new_logo.svg" alt="BBVA">
+      <div class="testimonial-text">"La herramienta perfecta para nuestras operaciones digitales."</div>
+      <div class="testimonial-meta">Caso de éxito</div>
+    </div>
+
+    <!-- Más tarjetas si querés -->
+
+  
+
+
+
+
+</body>
+</html>

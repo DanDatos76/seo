@@ -1,0 +1,58 @@
+.header {
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;     /* Ajustado a center */
+  justify-content: space-between;
+  padding: 0 20px;
+  height: 70px;
+}
+
+.logo {
+  height: 110px;
+}
+
+.nav {
+  margin-left: auto;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  line-height: 10px;
+}
+
+.nav-item {
+  padding: 20px 10px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  padding: 20px 0;
+}
+
+/* 👉 Nuevo: botón alineado a la derecha */
+.header-btn {
+  margin-left: 10px;
+  margin-top:  130px;;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
